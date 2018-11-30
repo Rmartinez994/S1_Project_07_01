@@ -17,23 +17,33 @@
 
 
 /* Hidden Objects */
-
-
-
-
-
-
+nav.horizonal,
+footer,
+article {
+    display: none;
+}
 
 /* Comic Book Sheet Styles */
+section#sheets {
+    width: 6in;
+    margin: 0in auto;
 
+}
 
+img.panel.size1 {
+    width: 5in;
+}
 
+img.panel.size2 {
+    width: 3in;
+}
 
+img.panel.size3 {
+    width: 2in;
+}
 
+img.panel.size4 {
+    width: 1.5in;
+}
 
-
-
-
-
-
-
+/* All these lines of code make it where the webpage is formatted correctly so anyone can easily print it. */

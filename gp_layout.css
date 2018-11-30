@@ -5,8 +5,8 @@
    Tutorial 5
    Case Problem 1
    
-   Author:   
-   Date:     
+   Author: Rafael Martinez   
+   Date: 11-28-18     
    
    Filename: gp_layout.css
 
@@ -24,42 +24,53 @@
 
 /* Flex Layout Styles */
 body {
-    display: -webkit-flex;
     display: flex;
-
-    -webkit-flexflow: row wrap;
     flex-flow: row wrap;
+    /* What these lines of code do is make it where the text is on the left side of the pictures and also the flex flow specifies the direction of the flexible item.    */
 }
+
+
 
 section#sheet {
     -webkit-flex: 3 1 301px;
-    flex: 3 1 301px;
+    /* What these lines of code do is basically sets the growth and shrink rate to 3 and 1 and the puts the basic size to 301px. */
 }
+
+
 
 article {
     -webkit-flex: 1 3 180px;
-    flex: 1 3 180px;
+    /* These lines of code set the growth and shrink rate to 1 and 3 and sets the basic size to 180px */
 }
+
+
 
 /* ============================================
 	Mobile Devices: 0 - 480 pixels
    ============================================
 */
 @media only screen and (max-width: 480px) {
+    /* What this line of code does is set the max width to 480px so anything above 480px is consider a tablet or desktop. */
 
     img.panel {
-        display: inline;
-        max-width: 100%;
+        width: 100%;
+        /* This line of code makes it where the image of the webpage would change in size to fit on mobile devices screens.  */
     }
+
+
 
     nav.horizontal {
         -webkit-order: 99;
-        order: 99;
+
+        /* This line of code makes the links go to the bottom of the webpage. */
     }
+
+
 
     body>footer {
         -webkit-order: 100;
-        order: 100;
+
+        /* This line of code makes the footer go to the bootom of the page instead of on top of the links.   */
     }
 
 }
@@ -74,16 +85,16 @@ article {
 
     nav.horizontal ul {
         display: -webkit-flex;
-        display: flex;
         -webkit-flex-flow: row nowrap;
-        flex-flow: row nowrap;
         height: 40px;
+        /* These lines of code make it where the links are displayed horizontally and also makes the links height set at 40px. */
     }
+
 
 
     nav.horizontal li {
         -webkit-flex: 1 1 auto;
-        flex: 1 1 auto;
+        /* What these lines of code do is make it where items grow and shrink at the same rate. */
     }
 
     img.panel.size1 {
@@ -102,5 +113,6 @@ article {
         width: 30%;
     }
 
+    /* These lines of code just defines the width of the comics book images */
 
 }
